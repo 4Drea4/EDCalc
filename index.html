@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exotic Dancer Tax Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="calculator-section">
+        <h1>Exotic Dancer Tax Calculato</h1>
+        
+        <label for="income">How much are you raking in? 💸</label>
+        <input type="number" id="income" placeholder="Enter your income">
+      
+        <label for="period">How often is that? 🕒</label>
+        <select id="period">
+          <option value="week">Per Week</option>
+          <option value="month">Per Month</option>
+          <option value="year">Per Year</option>
+        </select>
+        
+        <div id="children-buttons">
+          <p>How many children do you have? 👶</p>
+          <button class="child-btn" data-children="0">No Kids</button>
+          <button class="child-btn" data-children="1">1 Child</button>
+          <button class="child-btn" data-children="2">2 Children</button>
+          <button class="child-btn" data-children="3">3+ Children</button>
+        </div>
+      
+        <button id="calculate">Calculate My Tax Savings!</button>
+        
+        <div id="result"></div>
+      </section>
+      
+
+    <!-- Budget Breakdown Card -->
+    <div id="budget-card" class="card">
+      <h2>Plan Your Savings</h2>
+      <div class="budget-result">
+        <h3>To reach your savings goal:</h3>
+        <p>You need to save <span id="weekly-savings-amount">$0.00</span> per week.</p>
+        <p>You need to save <span id="monthly-savings-amount">$0.00</span> per month.</p>
+      </div>
+    </div>
+  </div>
+
+   <!-- Existing Tax Calculator Section -->
+<div class="card-container">
+   
+  
+    <!-- Mini Tax Education Quiz Section -->
+    <div id="quiz-card" class="card">
+      <h3>Mini Tax Education Quiz</h3>
+      <p>Test your tax knowledge and learn more about how to save!</p>
+  
+      <!-- Quiz Question -->
+      <div id="quiz-question" class="quiz-card">
+        <div class="quiz-container"> <!-- New Container/Card for answers -->
+          <p id="question-text">Question goes here</p>
+          
+          <!-- Answer Buttons -->
+          <button class="quiz-answer" data-answer="a">Answer a</button>
+          <button class="quiz-answer" data-answer="b">Answer b</button>
+          <button class="quiz-answer" data-answer="c">Answer c</button>
+          <button class="quiz-answer" data-answer="d">Answer d</button>
+  
+          <!-- Feedback Area -->
+          <p id="quiz-feedback" class="hidden"></p>
+  
+          <!-- Next Question Button -->
+          <button id="next-question" class="hidden">Next Question</button>
+        </div>
+      </div>
+  
+      <!-- Retry Quiz Button -->
+      <button id="retry-quiz" class="hidden">Retry Quiz</button>
+    </div>
+  </div>
+  
+  </div>
+</div>
+
+   <!-- Notice -->
+<div id="tax-notice">
+    <p>***Disclaimer: The information provided here is based on the 2024 tax rates and is for informational purposes only. It should not be considered legal or financial advice. Please consult a qualified tax advisor to determine your specific tax obligations.</p>
+</div>
+
+  
+
+  <script src="main.js"></script>
+</body>
+</html>
