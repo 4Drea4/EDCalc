@@ -1,11 +1,11 @@
-let children = 0;  // Default to 0 children
-let taxSavings = 0; // Global variable to store the calculated tax savings
+let children = 0;  
+let taxSavings = 0; 
 
 // Event listeners for child buttons
 document.querySelectorAll('.child-btn').forEach(button => {
   button.addEventListener('click', function() {
-    children = parseInt(this.getAttribute('data-children'));  // Get the number of children from the button's data-attribute
-    highlightSelectedButton(this);  // Highlight the selected button
+    children = parseInt(this.getAttribute('data-children'));  
+    highlightSelectedButton(this);  
   });
 });
 
@@ -22,7 +22,7 @@ function calculateTax() {
   const period = document.querySelector('#period').value;
 
   // Set the base tax rate (adjust as needed)
-  let taxRate = 0.25;
+  let taxRate = 0.26;
 
   // Adjust the tax rate based on number of children (lower tax for more kids)
   if (children === 1) {
@@ -67,7 +67,7 @@ function highlightSelectedButton(selectedButton) {
     button.style.backgroundColor = '#f4a261';
   });
   
-  // Add highlight to the selected button
+  //  highlight to the selected button
   selectedButton.style.backgroundColor = '#2a9d8f';
 }
 
@@ -174,5 +174,5 @@ function restartQuiz() {
   loadQuestion();
 }
 
-// Load the first question
+
 loadQuestion();
